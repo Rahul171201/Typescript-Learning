@@ -45,7 +45,9 @@ else{
     console.log(neverValue);
 }
 
-// For object checking , 
+// For object checking , we can use
+// user defined type guards to check if
+// an object abides by the interface type
 
 interface CarLike {
     make: string
