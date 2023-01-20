@@ -35,3 +35,31 @@ else {
     const neverValue = boat;
     console.log(neverValue);
 }
+let maybeCar;
+// the guard
+function isCarLike(valueToTest) {
+    return (valueToTest &&
+        typeof valueToTest === "object" &&
+        "make" in valueToTest &&
+        typeof valueToTest["make"] === "string" &&
+        "model" in valueToTest &&
+        typeof valueToTest["model"] === "string" &&
+        "year" in valueToTest &&
+        typeof valueToTest["year"] === "number");
+}
+// using the guard
+if (isCarLike(maybeCar)) {
+    maybeCar;
+}
+let src;
+function checkInterface(val) {
+    return (val &&
+        typeof val === "object" &&
+        "apex" in val &&
+        typeof val["apex"] === "string" &&
+        "num" in val &&
+        typeof val["num"] === "number");
+}
+if (checkInterface(src)) {
+    src;
+}
