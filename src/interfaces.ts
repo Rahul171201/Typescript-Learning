@@ -54,4 +54,3 @@ console.log(a);
 type num_and_numArrays = (number | num_and_numArrays[]);
 const b : num_and_numArrays = [1, 2, [4, 5, 6], 7, [2, 6, [3, 4, [5]]]];
 console.log(b);
-

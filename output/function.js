@@ -21,3 +21,15 @@ console.log(add(10, 13));
 (function print() {
     console.log("Priority");
 })();
+const ad = (a, b) => {
+    return a + b;
+};
+function addTwoThings(x, y) {
+    if (typeof (x) === "string" && typeof (y) === "string") {
+        return x + y;
+    }
+    else if (typeof (x) === "number" && typeof (y) === "number") {
+        return x + y;
+    }
+}
+;
